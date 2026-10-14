@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>설치·사용 안내 · CalendarWidget</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <p class="back"><a href="./">← CalendarWidget</a></p>
+  <h1>설치·사용 안내</h1>
+  <p class="lead">처음 한 번만 설치와 구글 로그인을 하면, 그다음부터는 바탕화면에서 바로 씁니다.</p>
+
+  <h2>1. 설치</h2>
+  <ol>
+    <li>배포 담당자에게 받은 <code>CalendarWidget.App-win-Setup.exe</code>를 실행합니다. 관리자 권한은 필요 없습니다.</li>
+    <li>파란 <strong>"Windows의 PC 보호"</strong> 창이 뜨면 <strong>추가 정보 → 실행</strong>을 누릅니다. 사내 배포용이라 서명 인증서를 붙이지 않아서 나오는 안내입니다.</li>
+    <li>설치가 끝나면 위젯이 바탕화면 오른쪽 위에 나타납니다. 다음부터는 Windows를 켤 때 자동으로 실행됩니다.</li>
+  </ol>
+
+  <h2>2. 구글 로그인 (처음 한 번)</h2>
+  <ol>
+    <li>위젯 오른쪽 위의 <strong>"구글 로그인"</strong>을 누르면 브라우저가 열립니다.</li>
+    <li>쓰는 구글 계정을 고릅니다.</li>
+    <li><strong>"Google에서 이 앱을 확인하지 않음"</strong> 화면이 나오면 <strong>고급 → CalendarWidget(으)로 이동</strong>을 누릅니다. 사내용이라 구글 심사를 받지 않아서 나오는 화면입니다.</li>
+    <li>권한 화면에서 <strong>체크박스를 모두 체크</strong>하고 계속을 누릅니다. 하나라도 빠지면 다시 로그인해야 합니다.</li>
+    <li>브라우저에 "로그인 완료"가 보이면 창을 닫습니다. 위젯에 일정이 나타납니다.</li>
+  </ol>
+
+  <h2>3. 쓰는 법</h2>
+  <table>
+    <thead><tr><th>하고 싶은 것</th><th>방법</th></tr></thead>
+    <tbody>
+      <tr><td>구글 캘린더와 맞추기</td><td>위젯의 <strong>동기화</strong> 버튼. 위젯에서 쓴 메모를 구글로 보내고, 구글의 최신 일정을 가져옵니다. 버튼을 누를 때만 합니다.</td></tr>
+      <tr><td>메모(일정) 쓰기</td><td>날짜 칸을 <strong>두 번 클릭</strong> → 한 줄에 하나씩 씁니다. 한 줄이 그날의 일정 하나가 됩니다. 시간은 "회의(14시)"처럼 글로 씁니다.</td></tr>
+      <tr><td>저장 / 취소</td><td>✓ 버튼이나 메모창 밖을 클릭하면 저장, <kbd>Esc</kbd>는 저장하지 않고 닫기</td></tr>
+      <tr><td>완료 표시(취소선)</td><td>메모창에서 줄을 고르고 <kbd>Ctrl</kbd>+<kbd>D</kbd> 또는 <strong>완료</strong> 버튼. 위젯에서 일정을 <strong>우클릭 → 완료 표시</strong>도 됩니다.</td></tr>
+      <tr><td>다른 캘린더에 저장</td><td>메모창 날짜 아래의 캘린더 이름을 눌러 바꿉니다. 고른 캘린더가 다음부터 기본값이 됩니다.</td></tr>
+      <tr><td>다른 달·주 보기</td><td>◀ ▶ 버튼 또는 날짜 칸 위에서 마우스 휠</td></tr>
+      <tr><td>위치·크기 바꾸기</td><td>오른쪽 위 자물쇠를 풀고 제목줄을 끌어 옮기고, 오른쪽 아래 ◢로 크기를 바꿉니다. 다 되면 다시 잠급니다.</td></tr>
+      <tr><td>색·글자 크기·주말·표시할 캘린더</td><td>위젯 <strong>우클릭 → 설정</strong></td></tr>
+    </tbody>
+  </table>
+  <p>메모를 저장하면 위젯에 바로 보이지만, ⏳ 표시가 붙어 있는 동안은 아직 구글에 보내지 않은 상태입니다. <strong>동기화</strong>를 누르면 구글 캘린더에 반영됩니다.</p>
+
+  <h2>4. 작업 표시줄 아이콘</h2>
+  <ul>
+    <li><strong>파란 달력</strong>: 정상 실행 중. <strong>주황 달력</strong>: 확인이 필요한 상태(마우스를 올리면 이유가 보입니다).</li>
+    <li>아이콘을 누르면 메뉴가 열립니다: 위젯 표시/숨기기, 지금 동기화, 설정, 종료.</li>
+  </ul>
+
+  <h2>5. 업데이트</h2>
+  <p>동기화 버튼을 누를 때 새 버전이 있으면 자동으로 받아 두고, 다음에 위젯을 켤 때 적용합니다. 바로 적용하려면 작업 표시줄 아이콘 메뉴의 <strong>"새 버전 적용 (다시 시작)"</strong>을 누릅니다.</p>
+
+  <h2>6. 문제가 생기면</h2>
+  <ol>
+    <li>작업 표시줄 아이콘 → <strong>고급 → 진단 정보 복사</strong>를 누릅니다.</li>
+    <li>복사된 내용을 배포 담당자에게 메신저로 붙여 넣어 보내 주세요. 일정 내용이나 비밀번호는 들어 있지 않습니다.</li>
+  </ol>
+
+  <h2>7. 제거</h2>
+  <p>Windows <strong>설정 → 앱 → 설치된 앱</strong>에서 CalendarWidget을 제거합니다. 로그인 정보와 저장된 일정까지 지우려면, 제거 전에 위젯 설정에서 <strong>로그아웃</strong>을 먼저 눌러 주세요.</p>
+
+  <footer>
+    <a href="privacy.html">개인정보처리방침</a>
+  </footer>
+</main>
+</body>
+</html>

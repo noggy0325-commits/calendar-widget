@@ -43,6 +43,9 @@ code { font-size: 0.9em; background: var(--bg); padding: 1px 5px; border-radius:
 table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
 th, td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; }
 th { background: var(--bg); }
+kbd { font-family: inherit; font-size: 0.85em; border: 1px solid var(--line); border-bottom-width: 2px; border-radius: 4px; padding: 0 5px; background: var(--bg); }
+ol, ul { padding-left: 1.3em; }
+li { margin-bottom: 4px; }
 footer { margin-top: 2.5rem; padding-top: 12px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.9rem; }
 @media (max-width: 600px) {
   main { margin: 0; border-radius: 0; border-left: 0; border-right: 0; padding: 24px 16px; }
