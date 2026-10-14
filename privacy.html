@@ -1,0 +1,85 @@
+﻿<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>개인정보처리방침 · CalendarWidget</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <p class="back"><a href="./">← CalendarWidget</a></p>
+  <h1>개인정보처리방침</h1>
+  <p class="meta">시행일: 2026년 10월 14일</p>
+
+  <p>
+    CalendarWidget(이하 "앱")은 사용자의 구글 캘린더를 Windows 바탕화면에 보여주고,
+    사용자가 위젯에서 작성한 메모를 사용자의 구글 캘린더에 저장하는 Windows 프로그램입니다.
+    이 방침은 앱이 어떤 정보를 어떻게 다루는지 설명합니다.
+  </p>
+
+  <h2>1. 앱이 접근하는 정보</h2>
+  <p>사용자가 구글 계정으로 로그인하고 권한을 허용하면, 앱은 다음 정보에 접근합니다.</p>
+  <table>
+    <thead><tr><th>구글 권한</th><th>접근하는 정보</th><th>쓰는 곳</th></tr></thead>
+    <tbody>
+      <tr>
+        <td><code>calendar.calendarlist.readonly</code></td>
+        <td>캘린더 목록(이름, 색상, 접근 권한)</td>
+        <td>위젯에 표시할 캘린더를 고르고, 일정을 캘린더 색으로 보여주기 위해</td>
+      </tr>
+      <tr>
+        <td><code>calendar.events</code></td>
+        <td>일정의 제목, 날짜·시간, 장소, 설명, 색상, 생성 시각</td>
+        <td>일정을 위젯에 보여주고, 사용자가 위젯에서 쓰거나 고치거나 지운 메모를 구글 캘린더에 반영하기 위해</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>
+    앱은 기본 캘린더의 ID(구글 계정 이메일 주소)를 연결된 계정을 표시하는 데에만 씁니다.
+    앱은 연락처, Gmail, 드라이브 등 캘린더 이외의 구글 데이터에 접근하지 않습니다.
+  </p>
+
+  <h2>2. 정보를 저장하는 곳</h2>
+  <ul>
+    <li><strong>사용자의 PC에만 저장합니다.</strong> 저장 위치는 <code>%LOCALAPPDATA%\CalendarWidget</code> 폴더입니다.</li>
+    <li>가져온 일정은 다음 실행 때 인터넷 없이 바로 보여주기 위해 이 폴더에 저장합니다.</li>
+    <li>위젯에서 쓴 메모 중 아직 구글에 보내지 않은 내용도 이 폴더에 잠시 보관합니다.</li>
+    <li>구글 로그인 정보(갱신 토큰)는 Windows 데이터 보호 기능(DPAPI)으로 암호화해 저장합니다. 같은 PC의 같은 Windows 계정에서만 풀 수 있습니다.</li>
+  </ul>
+
+  <h2>3. 정보를 보내는 곳</h2>
+  <ul>
+    <li>앱은 <strong>구글 서버(Google Calendar API, Google 인증 서버)와만</strong> 직접 통신합니다.</li>
+    <li>개발자나 다른 제3자에게 일정, 계정 정보, 사용 기록을 보내지 않습니다. 앱 개발자는 별도의 서버를 운영하지 않습니다.</li>
+    <li>광고, 분석 도구, 사용 통계 수집 기능이 없습니다.</li>
+    <li>앱은 사용자가 동기화 버튼을 누를 때에만 구글과 통신합니다.</li>
+  </ul>
+
+  <h2>4. 구글 사용자 데이터 정책 준수</h2>
+  <p>
+    앱이 Google API로부터 받은 정보를 사용하고 다른 앱으로 전송하는 방식은
+    <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API 서비스 사용자 데이터 정책</a>의
+    제한적 사용(Limited Use) 요구 사항을 준수합니다.
+    구글 사용자 데이터를 광고에 쓰거나 판매하지 않으며, 위에 적은 기능을 제공하는 데에만 사용합니다.
+  </p>
+
+  <h2>5. 보관 기간과 삭제</h2>
+  <ul>
+    <li>앱 설정 창에서 <strong>로그아웃</strong>하면 구글 접근 권한을 해제하고, PC에 저장된 로그인 정보와 일정 캐시, 보내지 않은 메모를 지웁니다.</li>
+    <li>앱을 제거한 뒤 <code>%LOCALAPPDATA%\CalendarWidget</code> 폴더를 지우면 PC에 남은 정보가 모두 삭제됩니다.</li>
+    <li>구글 계정의 <a href="https://myaccount.google.com/permissions">서드 파티 액세스 관리</a> 화면에서 언제든 이 앱의 접근 권한을 해제할 수 있습니다.</li>
+    <li>구글 캘린더에 저장된 일정은 구글 계정에 남으며, 구글 캘린더에서 직접 관리할 수 있습니다.</li>
+  </ul>
+
+  <h2>6. 문의</h2>
+  <p>
+    이 방침이나 앱에 대한 문의는 사내 배포 담당자 또는
+    <a href="https://github.com/noggy0325-commits/calendar-widget/issues">GitHub 문의 게시판</a>으로 해 주세요.
+  </p>
+
+  <h2>7. 방침의 변경</h2>
+  <p>이 방침이 바뀌면 이 페이지에 바뀐 내용과 시행일을 게시합니다.</p>
+</main>
+</body>
+</html>
